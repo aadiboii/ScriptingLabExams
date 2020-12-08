@@ -1,0 +1,42 @@
+<mat-card>
+    <mat-form-field appearance="outline" style="margin-right: 10px;">
+      <mat-label>Registration Number</mat-label>
+      <input matInput [(ngModel)] = "newreg">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="margin-right: 10px;">
+      <mat-label>Techer's Name</mat-label>
+      <input matInput [(ngModel)] = "newteacher">
+    </mat-form-field>
+
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Novely of Idea (X/10)</mat-label>
+      <input matInput [(ngModel)] = "novelty" type = "number">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Feasibilty of Solution (X/10)</mat-label>
+      <input matInput [(ngModel)] = "feasibilty" type = "number">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Presentation (X/10)</mat-label>
+      <input matInput [(ngModel)] = "pres" type = "number">
+    </mat-form-field>
+
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Report Writing (X/10)</mat-label>
+      <input matInput [(ngModel)] = "report" type = "number">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>Viva (X/10)</mat-label>
+      <input matInput [(ngModel)] = "viva" type = "number">
+    </mat-form-field>
+
+    <br />
+    <button mat-raised-button color="primary" (click)="add()">Submit</button>
+</mat-card>
+
